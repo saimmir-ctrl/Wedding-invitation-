@@ -226,6 +226,21 @@ body{
   .flap,.card{transition:none!important;animation:none!important}
 }
 
+
+/* Cross-browser Arabic Bismillah rendering */
+.bismillah{
+  font-family:"Geeza Pro","Noto Naskh Arabic","Noto Sans Arabic","Traditional Arabic",serif;
+  font-size:25px;
+  font-weight:400;
+  line-height:1.65;
+  letter-spacing:0;
+  white-space:nowrap;
+  direction:rtl;
+  unicode-bidi:isolate;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
 </style>
 </head>
 <body>
@@ -233,15 +248,13 @@ body{
 <button class="envelope" id="envelope" type="button" aria-expanded="false">
 <span class="back"></span>
 <article class="card">
-<div class="bismillah">﷽</div>
+<div class="bismillah" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
 <p class="hosts"><strong>Muzafar Ahmad Mir &amp; Samina Yesvi</strong><br>cordially invite you to the wedding ceremony of their son</p>
 <div class="couple-names"><div class="groom">Saim</div><div class="with">with</div><div class="bride">Hanna</div></div>
 <div class="details">
 <div class="program">PROGRAM</div>
-<div class="event"><strong>HEENABANDI</strong><br>2 October 2026 • 6:00 PM</div>
-<div class="event"><strong>MASNANDNISHINI</strong><br>3 October 2026 • 2:00 PM</div>
-<div class="event"><strong>WALIMA</strong><br>4 October 2026 • 2:00 PM</div>
-<div class="venue"><strong>VENUE</strong><br>Mir Manzil<br>171, Sector B, Gulbahar Colony<br>Hyderpora, Srinagar</div><div class="closing">Your presence will make our celebration complete.</div>
+  <div class="event"><strong>MASNANDNISHINI</strong><br>3 October 2026 • 2:00 PM</div>
+  <div class="venue"><strong>VENUE</strong><br>Mir Manzil<br>171, Sector B, Gulbahar Colony<br>Hyderpora, Srinagar</div><div class="closing">Your presence will make our celebration complete.</div>
 </div></article>
 <span class="front"></span><span class="flap"></span><span class="seal">❦</span>
 </button>
